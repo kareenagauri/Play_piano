@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="maindiv">
+        <h1 align="center" class="topic">Piano</h1>
+     <!--keyboard wrapper-->
+      <div class="board">
+        <!--8 white keys-->
+          <div data-key="A" class="white btn">
+             <h1>A</h1>
+          </div>
+        <!--5 black keys-->
+         <div data-key="Ab" class="black btn"></div>
+         <div data-key="B" class="white btn">
+             <h1>B</h1>
+         </div>
+         <div data-key="Bb" class="black btn"></div>
+         <div data-key="C" class="white btn">
+             <h1>C</h1>
+         </div>
+         <div data-key="D" class="white btn">
+            <h1>D</h1>
+         </div>
+         <div data-key="Db" class="black btn"></div>
+         <div data-key="E" class="white btn">
+            <h1>E</h1>
+         </div>
+         <div data-key="Eb" class="black btn"></div>
+         <div data-key="F" class="white btn">
+          <h1>F</h1>
+         </div>
+         <div data-key="G" class="white btn">
+          <h1>G</h1>
+         </div>
+         <div data-key="Gb" class="black btn"></div>
+         <div data-key="Gb" class="white btn">
+            <h1>Gb</h1>
+          </div>
+      </div>
+
+       <div align="center" class="select1">
+        <h2>Change color of Piano</h2>
+
+        <br>
+        <label for="cars" class="choose"> <strong>Choose a color :</strong> </label>
+
+        <select name="color" id="colors" onchange="handleColor()">
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+        <option value="red">red</option>
+        <option value="pink">pink</option>
+        </select>
+
+
+        <br> <br>
+       
+       </div>
+
+
+    </div>
+
+    
+
+
+
+    
+
+    <!--sounds-->
+    <audio src="sounds/piano_A.mp3" id="A"></audio>
+    <audio src="sounds/piano_A_sharp.mp3" id="Ab"></audio>
+    <audio src="sounds/piano_B.mp3" id="B"></audio>
+    <audio src="sounds/piano_fourth_A_D.mp3" id="Bb"></audio>
+    <audio src="sounds/piano_C_sharp.mp3" id="C"></audio>
+    <audio src="sounds/piano_D.mp3" id="D"></audio>
+    <audio src="sounds/piano_D_sharp.mp3" id="Db"></audio>
+    <audio src="sounds/piano_E.mp3" id="E"></audio>
+    <audio src="sounds/piano_F_sharp.mp3" id="Eb"></audio>
+    <audio src="sounds/piano_F.mp3" id="F"></audio>
+    <audio src="sounds/piano_new.mp3" id="G"></audio>
+    <audio src="sounds/piano_G_sharp.mp3" id="Gb"></audio>
+
+
+    <!--scripts-->
+    <script src="app.js"></script>
+    
+</body>
+</html>

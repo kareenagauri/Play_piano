@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic{
+ 
+    font-size: 40px;
+    color: #545454;
+    font-family: 'Shadows Into Light', cursive;
+}
+.board{
+    display: flex;
+    margin-top: 50px;
+   padding-bottom: 50px;
+    
+
+}
+.maindiv{
+    max-width: 100%;
+}
+
+.white{
+    position: relative;
+    width:100px ;
+    height: 400px;
+    background: #f9eaff;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+.white h1{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-10%);
+    user-select: none;
+}
+
+.white:active{
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.black{
+    width: 60px;
+    height: 200px;
+    background: #000000;
+    margin:0 -30px;
+    border-radius: 10px;
+    z-index:1;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),3px 3px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.black:active{
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.select1{
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+}
+
+.choose{
+    margin-right: 10px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 5px;
+}
